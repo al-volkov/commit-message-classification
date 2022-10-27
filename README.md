@@ -17,7 +17,7 @@ This repository contains code for training commit message classifier and some ex
 
 ## Usage
 
-1. **Install**
+1 **Install**
 ```
 git clone https://github.com/al-volkov/commit-message-classification.git
 pip install -r requirements.txt
@@ -46,8 +46,10 @@ Evaluated on [`datasets/dataset1/test.csv`](datasets/dataset1/test.csv)
 |--------|----------|----------------|----------------|-----------------|-----------------|--------------|--------------|--------------|
 | value  | 0.73     | 0.84           | 0.85           | 0.89            | 0.89            | 0.8          | 0.81         | 0.12         |
 
-##Dataset2 analysis
-
+## Dataset2 analysis
+![a1](https://user-images.githubusercontent.com/70965603/198382352-7581b225-3553-4a57-a4d2-d8f33ffa2a65.png)
+![a2](https://user-images.githubusercontent.com/70965603/198382361-d928f475-cec1-496b-9349-e0f7f8bf01bd.png)
+![a3](https://user-images.githubusercontent.com/70965603/198382365-afa4a95c-935a-4c88-a07e-880356f77885.png)
 
 
 
