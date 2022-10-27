@@ -1,1 +1,1 @@
-# commit-message-classification
+# Commit message classification

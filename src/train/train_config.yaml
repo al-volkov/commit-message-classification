@@ -1,0 +1,17 @@
+training_arguments:
+  output_dir: training_output
+  evaluation_strategy: epoch
+  save_strategy: epoch
+  learning_rate: 2.0e-5
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  num_train_epochs: 5
+  weight_decay: 0.01
+  load_best_model_at_end: True
+model_config:
+  hidden_dim: 768
+  num_labels: 3
+  dropout: 0.1
+dataset:
+  path_to_train_dataset: datasets/dataset1/train.csv
+  path_to_eval_dataset: datasets/dataset1/eval.csv

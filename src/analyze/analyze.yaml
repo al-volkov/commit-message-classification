@@ -1,0 +1,6 @@
+dataset1:
+  path_to_test_dataset: datasets/dataset1/test.csv
+  path_to_model: model.pth
+dataset2:
+  path_to_dataset: datasets/dataset2.txt
+  path_to_model: model.pth
