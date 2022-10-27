@@ -38,7 +38,7 @@ Once the model has trained, you can test it: [`src/analyze/analyze_dataset1.py`]
 
 If you think the predictions are accurate enough, you can get results for dataset2: [`src/analyze/analyze_dataset2.py`](src/analyze/analyze_dataset2.py)
 
-##Metrics
+## Metrics
 
 Evaluated on [`datasets/dataset1/test.csv`](datasets/dataset1/test.csv)
 
