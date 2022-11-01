@@ -38,7 +38,7 @@ class Model:
         """
         self.trainer.train()
 
-    def save_model(self, path):
+    def save_model(self, path) -> None:
         """
         Saves the model to the specified path, so it can be used later.
         """

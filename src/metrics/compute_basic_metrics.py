@@ -1,14 +1,16 @@
 import numpy as np
 from sklearn import metrics
+from typing import Dict
 
 
-def compute_basic_metrics(predictions, targets):
+def compute_basic_metrics(predictions, targets) -> Dict[str, float]:
     """
 
     Takes two arrays: predictions for some messages and actual labels. Return dict with metric names and their values
     on this dataset.
 
-    :param predictions: Two dimensional array (n x 3) with predicted labels. :param targets: Two dimensional array (n x 3) with real labels.
+    :param predictions: Two dimensional array (n x 3) with predicted labels.
+    :param targets: Two dimensional array (n x 3) with real labels.
     :return: Dict with 8 metrics and their values: accuracy, f1_score_micro,
     f1_score_macro, precision_micro, precision_macro, recall_micro, recall_macro, hamming_loss.
     """

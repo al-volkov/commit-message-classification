@@ -11,7 +11,7 @@ class CommitDataset(Dataset):
     """
 
     def __init__(
-        self, path: str, text_column_name="text", tokenizer: Optional[DistilBertTokenizer] = None, max_length=512
+            self, path: str, text_column_name="text", tokenizer: Optional[DistilBertTokenizer] = None, max_length=512
     ):
         """
         :param path: Path to csv file with data.
@@ -27,7 +27,7 @@ class CommitDataset(Dataset):
         self.tokenizer = tokenizer
         self.max_length = max_length
 
-    def __getitem__(self, index):
+    def __getitem__(self, index: int) -> dict:
         tokenized_commit = self.tokenizer(
             self.commits[index],
             None,
@@ -44,9 +44,15 @@ class CommitDataset(Dataset):
         }
 
     def get_labels(self):
+        """
+        :return: Labels from this dataset.
+        """
         return self.labels
 
     def get_text(self):
+        """
+        :return: Text (commit messages) from this dataset.
+        """
         return self.commits
 
     def split(self, lengths):

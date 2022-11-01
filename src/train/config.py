@@ -13,6 +13,9 @@ class Config:
         self.config = config
 
     def get_training_arguments(self) -> TrainingArguments:
+        """
+        Parses the config and returns a TrainingArguments instance created from the received data.
+        """
         config = self.config["training_arguments"]
         return TrainingArguments(
             output_dir=config["output_dir"],
@@ -27,6 +30,9 @@ class Config:
         )
 
     def get_model_config(self) -> DistilBertConfig:
+        """
+        Parses the config and returns a DistilBertConfig instance created from the received data.
+        """
         config = self.config["model_config"]
         return DistilBertConfig(
             hidden_dim=config["hidden_dim"], num_labels=config["num_labels"], dropout=config["dropout"]

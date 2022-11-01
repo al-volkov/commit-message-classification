@@ -4,7 +4,7 @@ from transformers import DistilBertModel
 
 class DistilBertClassifier(nn.Module):
     """
-    Subclass of nn.Module (base class for pytorch models). Based on DistilBert. Here one more layer is added with dropout and ReLLU, and on the last layer there are 3 neurons.
+    Subclass of nn.Module (base class for pytorch models). Based on DistilBert. Here one more layer is added with dropout and ReLU, and on the last layer there are 3 neurons.
     """
 
     def __init__(self, config):

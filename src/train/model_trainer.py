@@ -8,6 +8,9 @@ class ModelTrainer(Trainer):
     """
 
     def compute_loss(self, model, inputs, return_outputs=False):
+        """
+        Overrides base class method.
+        """
         input_ids = inputs.get("input_ids")
         attention_mask = inputs.get("attention_mask")
         labels = inputs.get("labels")
