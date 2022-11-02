@@ -8,6 +8,9 @@ class Config:
     """
 
     def __init__(self, path_to_config: str) -> None:
+        """
+        :param path_to_config:  Path to .yaml file with config.
+        """
         with open(path_to_config) as file:
             config = yaml.safe_load(file)
         self.config = config

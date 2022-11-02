@@ -24,3 +24,6 @@ jobs:
     - name: Lint with Black
       run: |
         black . --check -l 120
+    - name: Test
+        run: |
+          if [ -d tests ]; then pytest tests; fi

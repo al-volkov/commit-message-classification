@@ -11,7 +11,7 @@ class CommitDataset(Dataset):
     """
 
     def __init__(
-            self, path: str, text_column_name="text", tokenizer: Optional[DistilBertTokenizer] = None, max_length=512
+        self, path: str, text_column_name="text", tokenizer: Optional[DistilBertTokenizer] = None, max_length=512
     ):
         """
         :param path: Path to csv file with data.
