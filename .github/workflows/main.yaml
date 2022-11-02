@@ -25,5 +25,5 @@ jobs:
       run: |
         black . --check -l 120
     - name: Test
-        run: |
-          if [ -d tests ]; then pytest tests; fi
+      run: |
+        if [ -d tests ]; then pytest tests; fi
